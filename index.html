@@ -13,43 +13,42 @@
   <h2>Busca de personagem:</h2>
   <form action="" method="get">
     <input type="bumber" name="" id="characterId">
+
+    <hr>
+    <h2>Informações:</h2>
+
+    <label for="name">Nome</label>
+    <input type="checkbox" name="name" id="name">
+
+
+    <label for="status">Status</label>
+    <input type="checkbox" name="status" id="status">
+
+
+    <label for="species">Espécies</label>
+    <input type="checkbox" name="species" id="species">
+
+
+    <label for="gender">Gênero</label>
+    <input type="checkbox" name="gender" id="gender">
+
+
+    <label for="origin">Planeta de origem</label>
+    <input type="checkbox" name="origin" id="origin">
+
+
+    <label for="episode">Episódio</label>
+    <input type="checkbox" name="episode" id="episode">
+
+    <hr>
+
+    <button type="submit" id="btn-go">Pesquisar</button>
+    <button type="submit" id="btn-reset">Limpar</button>
   </form>
-  <hr>
-  <h2>Informações:</h2>
-
-  <label for="name">Nome</label>
-  <input type="checkbox" name="name" id="name">
-  <br>
-
-  <label for="status">Status</label>
-  <input type="checkbox" name="status" id="status">
-
-  <br>
-  <label for="species">Espécies</label>
-  <input type="checkbox" name="species" id="species">
-  <br>
-
-  <label for="gender">Gênero</label>
-  <input type="checkbox" name="gender" id="gender">
-
-  <br>
-  <label for="origin">Planeta de origem</label>
-  <input type="checkbox" name="origin" id="origin">
-
-  <br>
-  <label for="image">Foto</label>
-  <input type="checkbox" name="image" id="image">
-  <br>
-
-  <label for="episode">Episódio</label>
-  <input type="checkbox" name="episode" id="episode">
-
-  <hr>
-
-  <button id="btn-go">Pesquisar</button>
-
-  <pre id="content"></pre>
-  <img src="" alt="" id="img">
+  <div id="result-style">
+    <img src="" alt="" id="img">
+    <pre id="content"></pre>
+  </div>
 </body>
 <script src="./script.js"></script>
 
