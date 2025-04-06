@@ -1,55 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Rick and Morty</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Rick and Morty Terminal</title>
 </head>
 
 <body>
-  <h2>Busca de personagem:</h2>
-  <form action="" method="get">
-    <input type="bumber" name="" id="characterId">
+  <div class="terminal">
+    <h2>Busca de personagem:</h2>
+    <form>
+      <input type="number" id="characterId" placeholder="ID do personagem" />
 
-    <hr>
-    <h2>Informações:</h2>
+      <hr />
+      <h2>Informações:</h2>
 
-    <label for="name">Nome</label>
-    <input type="checkbox" name="name" id="name">
+      <label><input type="checkbox" id="name" name="name" /> Nome</label>
+      <label><input type="checkbox" id="status" name="status" /> Status</label>
+      <label><input type="checkbox" id="species" name="species" /> Espécie</label>
+      <label><input type="checkbox" id="gender" name="gender" /> Gênero</label>
+      <label><input type="checkbox" id="origin" name="origin" /> Planeta de origem</label>
+      <label><input type="checkbox" id="episode" name="episode" /> Episódio</label>
 
+      <hr />
 
-    <label for="status">Status</label>
-    <input type="checkbox" name="status" id="status">
+      <button type="submit" id="btn-go">Pesquisar</button>
+      <button type="button" id="btn-reset">Limpar</button>
+    </form>
 
-
-    <label for="species">Espécies</label>
-    <input type="checkbox" name="species" id="species">
-
-
-    <label for="gender">Gênero</label>
-    <input type="checkbox" name="gender" id="gender">
-
-
-    <label for="origin">Planeta de origem</label>
-    <input type="checkbox" name="origin" id="origin">
-
-
-    <label for="episode">Episódio</label>
-    <input type="checkbox" name="episode" id="episode">
-
-    <hr>
-
-    <button type="submit" id="btn-go">Pesquisar</button>
-    <button type="submit" id="btn-reset">Limpar</button>
-  </form>
-  <div id="result-style">
-    <img src="" alt="" id="img">
-    <pre id="content"></pre>
+    <div id="result-style" class="result-style hidden">
+      <img src="" alt="" id="img" />
+      <pre id="content"></pre>
+    </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
-<script src="./script.js"></script>
 
 </html>
