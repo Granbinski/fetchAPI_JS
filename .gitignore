@@ -1,0 +1,47 @@
+# Node Modules
+node_modules/
+
+# Log Files
+logs/
+*.log
+
+# Environment Variables
+.env
+
+# Build Files
+dist/
+build/
+
+# Coverage Reports
+coverage/
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# API Keys and Secrets
+*.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Fetch API specific files (if any)
+fetch/
+
+# Ignore Rick and Morty API specific files
+rickandmorty/
+
+# Ignore JavaScript specific files
+*.js
+*.js.map
